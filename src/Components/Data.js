@@ -4,14 +4,9 @@ import get from 'lodash/get';
 import { Table } from 'react-bootstrap';
 import * as axios from 'axios'; // for making API calls
 
-const OPTIONS = [
-    { value: 'place-north', label: 'North Station' },
-    { value: 'place-sstat', label: 'South Station' }
-  ];
 
 const BASE_URL = 'https://api-v3.mbta.com';
 const ROUTE_TYPE = 2; // 2=commuter rail
-// const DIRECTION_ID = 0; // departuring from
 const INCLUDES = ['stop', 'trip', 'schedule'];
 const HEADERS = ['Time', 'Destination', 'Train #', 'Track #', 'Status'];
 
